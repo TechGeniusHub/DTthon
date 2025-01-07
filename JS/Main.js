@@ -260,7 +260,7 @@ function loadContent() {
                 
                 const addThreadBtn = formContainer.querySelector('.add-thread-btn');
                 const subThreadsContainer = formContainer.querySelector('.sub-threads-container');
-                const dropContainer = formContainer.querySelector('#drop'); // Select the dropdown container
+                const dropContainer = formContainer.querySelector('#drop'); 
             
                 addThreadBtn.addEventListener('click', () => {
                     const subThreadDiv = document.createElement('div');
