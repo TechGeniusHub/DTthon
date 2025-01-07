@@ -1,0 +1,297 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: row;
+        color: #333;
+    }
+    
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: white; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px 15px; 
+}
+
+.header-container {
+    display: flex;                
+    justify-content: space-between; 
+    align-items: center;           
+}
+
+.submit-btn {
+    margin-left: auto;           
+    padding: 12px 10px;
+    background-color: #0029ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120px;
+    height: 40px;
+    
+}
+
+
+header img {
+    height: 40px; 
+}
+    .sidebar {
+        width: 350px; 
+        color: black;
+        display: flex;
+        flex-direction: column;
+        height: 600px; 
+        position: fixed;
+        overflow-y: auto;
+        transition: width 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border-radius: 0px 20px 20px 20px;
+        top: 65px; 
+    }
+
+    .sidebar.collapsed {
+        width: 80px;
+    }
+    .sidebar.collapsed #taskList li {
+        list-style: none;
+        color: #0029ff;   
+    }
+
+    .sidebar.collapsed #taskList{
+        font-size: 18px;
+        border: 1px solid black;
+        margin: 20px 10px 20px 10px;
+        padding: 0px 0px 0px 25px;
+        border-radius: 20px;
+        border-color: #0029ff;
+        
+    }
+
+    #taskList li {
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+        list-style: disc;
+    }
+
+
+    #sidebarHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        background-color: black;
+        color: white;
+        border-radius: 0px 20px 0px 0px;
+        position: sticky; 
+        top: 0;
+        
+        z-index: 1; 
+    }
+
+    #sidebarHead h2 {
+        margin: 0;
+        font-size: 1.3em; 
+        flex-grow: 1; 
+        text-align: left;
+        white-space: nowrap; 
+    }
+
+    .toggle-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        font-size: 1.6em;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+        margin-left: auto; 
+    }
+
+    
+    .sidebar.collapsed #sidebarHead h2 {
+        display: none; 
+    }
+
+    .sidebar.collapsed #sidebarHead .toggle-btn {
+        margin-left: auto; 
+        
+    }
+    #shortDescription {
+        text-align: left; 
+        margin: 20px 20px 20px 30px;
+    }
+    
+    #shortDescription strong {
+        font-size: 21px;
+    }
+    
+    #shortDescription p {
+        text-align: left; 
+        line-height: 25px;
+    }
+   
+    .main-content {
+        margin: 50px 0px 0px 350px; 
+        padding: 20px;
+        flex: 1;
+        overflow: auto;
+        transition: margin-left 0.3s ease;
+    }
+   .main-content h1{
+    color: #0029ff
+   }
+    .sidebar.collapsed + .main-content {
+        margin-left: 80px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .sidebar {
+            width: 250px;
+        }
+
+        .sidebar.collapsed {
+            width: 60px;
+        }
+
+        .main-content {
+            margin-left: 250px;
+        }
+
+        .sidebar.collapsed + .main-content {
+            margin-left: 60px;
+        }
+    }
+    .header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #e9ecef;
+    }
+
+ 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 95px; 
+    margin: 20px auto 0px auto;
+    padding: 10px; 
+    justify-content: center; 
+    max-width: 100%; 
+    box-sizing: border-box;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 480px; 
+    height: 580px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    overflow-y: auto; 
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    padding: 5px; 
+}
+
+.title-container h2 {
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.title-container .info-icon {
+    font-size: 1.2em;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.description {
+    margin: 0px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), -4px 4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    padding: 20px 10px;
+}
+
+.description.hidden {
+    display: none;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 100px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .title-container {
+        padding: 10px; 
+    }
+
+    .description {
+        padding: 15px;
+    }
+}

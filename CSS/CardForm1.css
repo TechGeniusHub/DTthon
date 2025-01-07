@@ -1,0 +1,129 @@
+.form-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+.add-thread-btn {
+    padding: 12px 10px;
+    background-color: #0029ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120px;
+    height: 40px;
+    margin-left: 20px;
+    
+}
+
+.add-thread-btn:hover {
+    background-color: #3d05d7fc;
+}
+
+select.input-field {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 4 5%22%3E%3Cpath fill%3D%22%23000000%22 d%3D%22M2 0L0 2h4zm0 5L0 3h4z%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px 10px;
+    width: 120px;
+   
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.inputs{
+    border: 1px solid rgba(255, 255, 255, 0.096);
+    background-color: rgb(225, 225, 225);
+    border-radius: 10px;
+    width: 186px;
+    height: 95px;
+    padding: 10px 0px 0px 0px ;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), -4px 4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.inputs label{
+    margin-left: 10px;
+}
+.inputs textarea{
+    width: 169px;
+    height: 55px;
+    margin-top: 7px;
+
+}
+
+.inputs1{
+    border: 1px solid rgba(255, 255, 255, 0.096);
+    background-color: rgb(225, 225, 225);
+    border-radius: 10px;
+    width: 377px;
+    height: 143px;
+    padding: 10px 0px 0px 0px ;
+    /* margin: auto; */
+    margin: 10px 30px 30px 50px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), -4px 4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.inputs1 label{
+    margin-left: 10px;
+}
+.inputs1 textarea{
+    width: 360px;
+    height: 103px;
+    margin-top: 7px;
+}
+
+.threadTitle{
+    background-color: antiquewhite;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.threadTitle h2{
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+#drop{
+    margin-left: 65px;
+    margin-top: 35px;
+}
+
+.icons-wrapper{
+    margin-top: 20pxpx;
+}
+
+.icons-wrapper i{
+    margin-right: 10px;
+}
