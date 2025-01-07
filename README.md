@@ -35,9 +35,8 @@ Below are screenshots of the final webpage:
 ![Image 3](https://github.com/user-attachments/assets/1926ddcb-9d29-48f3-a62b-3a6611f889e0)
 ![Image 4](https://github.com/user-attachments/assets/6494771d-9d4a-48df-80f4-2645638bce71)
 
-### Figma Design:
-The design was created using Figma and can be accessed using the following link:  
-[Figma Design Link](https://www.figma.com/design/K9XvDU57V3MAvpEt8JFM4o/Web-Development-Assignment?node-id=0-1&t=gNI06m7lWbFODqKt-1)
+### Figma Design: 
+[#DEEP THOUGHT](https://www.figma.com/design/K9XvDU57V3MAvpEt8JFM4o/Web-Development-Assignment?node-id=0-1&t=gNI06m7lWbFODqKt-1)
 ---
 
 ### Technologies Used:
