@@ -51,4 +51,4 @@ The design was created using Figma and can be accessed using the following link:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+   https://github.com/TechGeniusHub/DTthon.git
