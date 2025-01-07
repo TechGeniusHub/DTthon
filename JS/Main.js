@@ -152,28 +152,28 @@ function loadContent() {
         taskList.appendChild(li);
 
         task.assets.forEach((asset, assetIndex) => {
-            // Create card container
+            
             const card = document.createElement('div');
             card.className = 'card';
 
-            // Create title container
+          
             const titleContainer = document.createElement('div');
             titleContainer.className = 'title-container';
 
-            // Add title and info icon
+           
             titleContainer.innerHTML = `
                 <h2>${asset.asset_title}</h2>
                 <span class="info-icon">i</span>
             `;
 
-            // Create description paragraph (initially hidden)
+            // initially hidden
             const descriptionParagraph = document.createElement('p');
             descriptionParagraph.className = 'description hidden';
             descriptionParagraph.textContent = asset.asset_description;
 
-            // Add toggle functionality to info icon
+       
             titleContainer.querySelector('.info-icon').addEventListener('click', (event) => {
-                event.stopPropagation(); // Prevent any unwanted bubbling
+                event.stopPropagation(); 
                 descriptionParagraph.classList.toggle('hidden');
             });
 
@@ -181,7 +181,7 @@ function loadContent() {
             card.appendChild(titleContainer);
             card.appendChild(descriptionParagraph);
 
-            // Display content based on asset content type
+            // content based on asset content type
             if (asset.asset_content_type === 'video') {
                 const videoContainer = document.createElement('div');
                 videoContainer.className = 'video-container';
@@ -199,7 +199,7 @@ function loadContent() {
                 card.appendChild(link);
             }
 
-           //create cards
+        
             let formContainer = document.createElement('form');
             formContainer.className = 'asset-form';
 
@@ -257,7 +257,7 @@ function loadContent() {
                     </div>
                 `;
             
-                // Add event listener - "Add Sub-thread" button
+                
                 const addThreadBtn = formContainer.querySelector('.add-thread-btn');
                 const subThreadsContainer = formContainer.querySelector('.sub-threads-container');
                 const dropContainer = formContainer.querySelector('#drop'); // Select the dropdown container
