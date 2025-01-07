@@ -1,0 +1,32 @@
+.thread-history{
+    background-color: rgb(198, 198, 198);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.intro-answer{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+div.intro-answer .seemore{
+    color: rgb(138, 138, 138);
+    margin-left: 330px;
+}
+.arrow-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(42, 42, 42);
+    display: inline-block;
+}
+
+
+
+.up-arrow {
+ 
+    display: none;
+}
+
+
