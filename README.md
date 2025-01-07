@@ -1,4 +1,4 @@
-# Web Development Tasks
+# Front-end Tasks
 
 ## Task 1: Webpage Creation
 
@@ -36,8 +36,7 @@ Below are screenshots of the final webpage:
 ![Image 4](https://github.com/user-attachments/assets/6494771d-9d4a-48df-80f4-2645638bce71)
 
 ### Figma Design:
-The design was created using Figma and can be accessed using the following link:  
-[Figma Design Link](https://www.figma.com/design/K9XvDU57V3MAvpEt8JFM4o/Web-Development-Assignment?node-id=0-1&t=gNI06m7lWbFODqKt-1)
+[#DEEP THOUGHT](https://www.figma.com/design/K9XvDU57V3MAvpEt8JFM4o/Web-Development-Assignment?node-id=0-1&t=gNI06m7lWbFODqKt-1)
 
 
 ### Technologies Used:
